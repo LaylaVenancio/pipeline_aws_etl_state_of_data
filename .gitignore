@@ -216,3 +216,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Credenciais AWS
+.aws/
+*.pem
+.env
+
+# Dados processados (gerados pelo pipeline, vão para o S3)
+data/processed/
+
+# Logs e temporários
+*.log
+tmp/
