@@ -39,9 +39,7 @@ A fonte de dados da pipeline são 3 arquivos .csv das últimas edições da pesq
 
 ### Camada Silver
 
-O objetivo dessa etapa foi consolidar os dados das pesquisas de 2023,2024 e 2025 na `tb_silver`, com dados limpos, identificação de ano e schema padronizado.
-
-Como a pesquisa não possui a mesma estrutura entre os anos, essa etapa concentra o maior volume de transformações do projeto.
+O objetivo dessa etapa foi consolidar os dados das pesquisas de 2023,2024 e 2025 na `tb_silver`, com dados limpos, identificação de ano e schema padronizado. Como a pesquisa não possui a mesma estrutura entre os anos, essa etapa concentra o maior volume de transformações do projeto.
 
 Ações realizadas:
 1. Padronização de schema entre os anos:
