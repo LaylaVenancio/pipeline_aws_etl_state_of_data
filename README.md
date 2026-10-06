@@ -88,7 +88,7 @@ A `tb_silver` possui 420 colunas. Dessa forma, o objetivo da camada gold é orga
 
 ## Como reproduzir 
 
-**Pré-requisitos:** conta AWS com permissões para S3, Glue e Athena, e uma IAM Role para os Glue Jobs com acesso de leitura e escrita ao bucket.
+**Pré-requisitos:** conta AWS com permissões para S3, Glue e uma IAM Role para os Glue Jobs com acesso de leitura e escrita ao bucket.
 
 1. Obter os três arquivos `.csv` da pesquisa State of Data (2023, 2024 e 2025), disponíveis na pasta [`data/`](data/) do repositório.
 2. Criar o bucket S3 `state-of-data-<ID>` (região `us-east-1`) e fazer upload dos CSVs para a camada bronze: `s3://<seu-bucket>/bronze/`
