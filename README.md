@@ -62,8 +62,8 @@ As 3 fontes de dados possuem diferenças de schema, devido ás mudanças que a p
 
 A `tb_silver` possui 420 colunas. Dessa forma, o objetivo da camada gold é organizar o dataframe em tabelas temáticas orientadas às principais dimensões analíticas da pesquisa, mantendo o `token` como identificador único do respondente e o `ano_pesquisa` como referência temporal.
 
-**ETL JOB (`bronze_to_silver`):**
-1. Criação das 5 colunas analíticas: `tb_gold_pessoa` | `tb_gold_empresa_atual` | `tb_gold_rotina_profissional` | `tb_gold_ia` | `tb_gold_stack_tecnologico`
+**ETL JOB (`silver_to_gold`):**
+1. Criação das 5 tabelas analíticas: `tb_gold_pessoa` | `tb_gold_empresa_atual` | `tb_gold_rotina_profissional` | `tb_gold_ia` | `tb_gold_stack_tecnologico`
 2. Armazenamento do resultado em Parquet no bucket gold (S3) e registro das tabelas no  `db_gold`, utilizando o AWS Glue Data Catalog
 
 > [Script completo](src/silver_to_gold.py)
